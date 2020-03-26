@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans:wght@600&display=swap");
+
+/*    Set up the Font family in all app       */
+.font-body {
+  font-family: "Nunito", sans-serif;
+}
+
+.font-header-navbar {
+  font-family: "Open Sans", sans-serif;
+}
+/* --------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+
+.header-app {
+  height: 6vh;
+  width: 40%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.logo-container {
+  padding: 10px;
+  color: hsl(261, 59%, 50%);
+  flex: 2;
+}
+
+.title-app {
+  color: hsl(261, 59%, 50%);
+  text-decoration: none;
+  font-size: 1.2em;
+  transition-duration: 700ms;
+}
+
+.title-app:hover {
+  color: hsl(261, 100%, 79%);
+}
+
+.navigation-menu {
+  flex: 1;
+}
+
+.logo-container,
+.nav-links {
+  display: flex;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 0.8em;
+  color: hsl(261, 59%, 50%);
+  text-decoration: none;
+  transition-duration: 700ms;
+}
+
+.nav-link:hover {
+  color: hsl(261, 100%, 79%);
+}
+
+.card-container {
+  margin: auto;
+  width: 40%;
+  height: 80vh;
+  background: hsl(0, 0%, 97%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0px 8px 10px -8px hsl(0, 0%, 52%);
+}
+
+.description-app {
+  width: 80%;
+  height: 50vh;
+  background: hsl(0, 0%, 91%);
+  border-radius: 10px;
+  box-shadow: 0px 8px 10px -8px hsl(0, 0%, 52%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 35%;
+}
+
+p {
+  text-align: center;
+}
+
+.span-words {
+  color: hsl(261, 59%, 50%);
+  font-weight: bolder;
+}
+
+.span-words2 {
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+
+.links {
+  color: hsl(261, 59%, 50%);
+}
+
+/*============== MEDIA QUERIES =============*/
+
+/* MOBILE & TABLETS DEVICES */
+
+@media (max-width: 768px) {
+  .header-app {
+    width: 95%;
+  }
+
+  .card-container{
+    width: 95%;
+  }
+
+
+  input[class^="input"] {
+    width: 70%;
+  }
+}
+
+@media (min-width: 780px) {
+  .header-app {
+    width: 60%;
+  }
+
+  .card-container {
+    width: 60%;
+  }
+
+  input[class^="input"] {
+    width: 50%;
+  }
+}
+
+/* DESKTOP & LAPTOP DEVICES */
+
+@media (min-width: 1024px) {
+  .header-app {
+    width: 40%;
+  }
+
+  .card-container {
+    width: 40%;
+  }
+
+  input[class^="input"] {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-app {
+    width: 40%;
+  }
+
+  .card-container {
+    width: 40%;
+  }
+}
+

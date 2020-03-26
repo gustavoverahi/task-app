@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="./css/task.css" />
+    <link
+      href="https://pagecdn.io/lib/font-awesome/5.12.0-1/css/all.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+      integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU="
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <title>Reminder App</title>
+  </head>
+  <body>
+    <header class="header-app font-header-navbar">
+      <div class="logo-container">
+        <a href="./main.html" class="title-app">Reminder App </a>
+      </div>
+
+      <div class="navigation-menu">
+        <div class="nav-link">
+        </div>
+      </div>
+    </header>
+
+    <main class="main-container font-body">
+      <div class="subtitle-new-task">
+        <h2>Add a new task</h2>
+      </div>
+
+      <section class="task-new">
+        <form class="form" id="task-form">
+          <input
+            class="input-task font-body"
+            type="text"
+            id="input-task"
+            placeholder="New task"
+          />
+
+          <input class="btn-add font-body" type="submit" value="Add" />
+        </form>
+      </section>
+
+      <div class="subtitle-list-task">
+        <h3>Task List</h3>
+      </div>
+
+      <div class="search-box">
+        <input
+          class="input-search font-body"
+          type="text"
+          id="input-search"
+          placeholder="Filter Tasks"
+        />
+      </div>
+
+      <section class="task-list"></section>
+    </main>
+
+    <section class="footer font-body">
+      <a class="log-out" href="#">Logout</a>
+    </section>
+    <script src="./js/task.js"></script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans:wght@600&display=swap");
+
+/*    Set up the Font family in all app       */
+.font-body {
+  font-family: "Nunito", sans-serif;
+}
+
+.font-header-navbar {
+  font-family: "Open Sans", sans-serif;
+}
+/* --------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+
+.header-app {
+  height: 6vh;
+  width: 40%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.logo-container {
+  padding: 10px;
+  color: hsl(261, 59%, 50%);
+  flex: 2;
+}
+
+.title-app {
+  color: hsl(261, 59%, 50%);
+  text-decoration: none;
+  font-size: 1.2em;
+  transition-duration: 700ms;
+}
+
+.title-app:hover {
+  color: hsl(261, 100%, 79%);
+}
+
+.navigation-menu {
+  flex: 1;
+}
+
+.logo-container,
+.nav-links {
+  display: flex;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 1em;
+  color: hsl(261, 59%, 50%);
+  text-decoration: none;
+  transition-duration: 700ms;
+}
+
+.nav-link:hover {
+  color: hsl(261, 100%, 79%);
+}
+
+.card-login {
+  margin: auto;
+  width: 40%;
+  background: hsl(0, 0%, 97%);
+  border-radius: 4px;
+  box-shadow: 0px 8px 10px -8px hsl(0, 0%, 52%);
+}
+
+.card-form {
+  padding: 50px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[class^="input"] {
+  margin: 0px 15px 15px;
+  width: 54%;
+  height: 4vh;
+  background: hsl(0, 0%, 97%);
+  border: none;
+  border-bottom: 1px solid hsl(0, 0%, 77%);
+  font-size: 0.9em;
+  outline: none;
+}
+
+input[class^="input"]:focus {
+  border-bottom: 1px solid hsl(261, 59%, 50%);
+}
+
+.btn-submit {
+  margin: 20px;
+  padding: 5px;
+  width: 15%;
+  background: hsl(0, 0%, 48%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bolder;
+  cursor: pointer;
+  outline: none;
+  transition-duration: 700ms;
+}
+
+.btn-submit:hover {
+  background: hsl(0, 0%, 25%);
+}
+
+/*============== MEDIA QUERIES =============*/
+
+/* MOBILE & TABLETS DEVICES */
+
+@media (max-width: 768px) {
+  .header-app {
+    width: 95%;
+  }
+
+  .card-login {
+    width: 95%;
+  }
+
+
+  input[class^="input"] {
+    width: 70%;
+  }
+
+  .btn-submit {
+    width: 25%;
+  }
+}
+
+@media (min-width: 780px) {
+  .header-app {
+    width: 60%;
+  }
+
+  .card-login {
+    width: 60%;
+  }
+
+  input[class^="input"] {
+    width: 50%;
+  }
+}
+
+/* DESKTOP & LAPTOP DEVICES */
+
+@media (min-width: 1024px) {
+  .header-app {
+    width: 40%;
+  }
+
+  .card-login {
+    width: 40%;
+  }
+
+  input[class^="input"] {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-app {
+    width: 40%;
+  }
+
+  .main-container {
+    width: 40%;
+  }
+}

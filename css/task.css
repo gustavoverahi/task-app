@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans:wght@600&display=swap");
+
+/*    Set up the Font family in all app       */
+.font-body {
+  font-family: "Nunito", sans-serif;
+}
+
+.font-header-navbar {
+  font-family: "Open Sans", sans-serif;
+}
+/* --------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+
+.header-app {
+  height: 6vh;
+  width: 40%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.logo-container {
+  padding: 10px;
+  color: hsl(261, 59%, 50%);
+  flex: 2;
+}
+
+.title-app {
+  color: hsl(261, 59%, 50%);
+  text-decoration: none;
+  font-size: 1.2em;
+  transition-duration: 700ms;
+}
+
+.title-app:hover {
+  color: hsl(261, 100%, 79%);
+}
+
+.navigation-menu {
+  flex: 1;
+}
+
+.link-user {
+  display: flex;
+  justify-content: space-evenly;
+  color: hsl(261, 59%, 50%);
+  align-items: center;
+  font-size: 0.8em;
+  transition-duration: 700ms;
+}
+
+.link-user:hover {
+  color: hsl(261, 100%, 79%);
+}
+
+.main-container {
+  margin: auto;
+  padding: 15px;
+  width: 40%;
+  background: hsl(0, 0%, 97%);
+  border-radius: 4px;
+  box-shadow: 0px 8px 10px -8px hsl(0, 0%, 52%);
+}
+
+.subtitle-new-task {
+  margin: 30px 10px;
+  font-size: 0.6em;
+}
+
+.task-new {
+  width: 60%;
+  height: 9vh;
+  margin: 30px 10px 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-task {
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 163.5%;
+  background: hsl(0, 0%, 97%);
+  border: none;
+  border-bottom: 1px solid hsl(0, 0%, 77%);
+  font-size: 0.9em;
+  outline: none;
+}
+
+.input-task:focus {
+  border-bottom: 1px solid hsl(261, 59%, 50%);
+}
+
+.btn-add {
+  padding: 5px;
+  width: 70px;
+  background: hsl(0, 0%, 48%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bolder;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  transition-duration: 700ms;
+}
+
+.btn-add:hover {
+  background: hsl(0, 0%, 25%);
+}
+
+.subtitle-list-task {
+  margin: 50px 10px 8px;
+  font-size: 0.8em;
+}
+
+.input-search {
+  margin: 2px 10px 15px;
+  padding: 5px;
+  width: 98%;
+  background: hsl(0, 0%, 97%);
+  border: none;
+  border-bottom: 1px solid hsl(0, 0%, 77%);
+  font-size: 0.9em;
+  outline: none;
+}
+
+.input-search:focus {
+  border-bottom: 1px solid hsl(261, 59%, 50%);
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  margin: 8px;
+  padding: 15px;
+  width: 98.5%;
+  height: 7vh;
+  background: hsl(0, 0%, 91%);
+  border-radius: 4px;
+  box-shadow: 0px 5px 10px -8px hsl(0, 0%, 52%);
+}
+
+.box-content {
+  color: hsl(261, 59%, 50%);
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.delete-task {
+  float: right;
+  color: hsl(0, 60%, 64%);
+  text-decoration: none;
+  transition-duration: 600ms;
+  cursor: pointer;
+}
+
+.delete-task:hover {
+  font-size: 1.2em;
+}
+
+.footer {
+  margin: auto;
+  width: 40%;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: hsl(0, 0%, 97%);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 5px 10px -8px hsl(0, 0%, 52%);
+}
+
+.log-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 3vh;
+  background: hsl(0, 0%, 48%);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px 0px 0px 4px;
+  font-weight: bolder;
+  font-size: 0.9em;
+  transition-duration: 700ms;
+}
+
+.log-out:hover {
+  background: hsl(0, 0%, 25%);
+}
+
+/*================== MEDIA QUERIES =====================*/
+
+/* MOBILES & TABLETS DEVICES */
+
+@media (max-width: 768px) {
+  .header-app {
+    width: 95%;
+  }
+
+  .main-container {
+    width: 95%;
+  }
+
+  .subtitle-list-task {
+    margin: 45px 10px 15px;
+  }
+
+  .task {
+    height: 10vh;
+  }
+
+  .footer {
+    width: 95%;
+  }
+}
+
+@media (min-width: 780px) {
+  .header-app {
+    width: 70%;
+  }
+
+  .main-container {
+    width: 70%;
+  }
+
+  .footer {
+    width: 70%;
+  }
+}
+
+/* LAPTOP & DESKTOP DEVICES */
+
+@media (min-width: 1024px) {
+  .header-app {
+    width: 50%;
+  }
+
+  .main-container {
+    width: 50%;
+  }
+
+  .footer {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-app {
+    width: 40%;
+  }
+
+  .main-container {
+    width: 40%;
+  }
+
+  .footer {
+    width: 40%;
+  }
+}
