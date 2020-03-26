@@ -1,4 +1,4 @@
-# TASK APP AND LOGIN WITH LOCAL STORAGE
+# Task app and login with Local Storage
 
 In this app you can add all task you want and everything will be saved in local storage
 
